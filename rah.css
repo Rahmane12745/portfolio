@@ -2875,6 +2875,20 @@ footer,
   .timeline-item {
     padding-left: 0;
   }
+
+  .hero-social-cv {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .modal-dialog {
+    width: 95% !important;
+    max-height: 90vh !important;
+  }
+
+  .modal-body-wrapper {
+    padding: 22px 16px !important;
+  }
 }
 
 /* Petit mobile */
@@ -2895,6 +2909,36 @@ footer,
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .hero-social-cv {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero-pipe-separator {
+    display: none;
+  }
+
+  .hero-cv-download {
+    width: 100%;
+    justify-content: center;
+    background: rgba(14, 165, 233, 0.06);
+    border-color: rgba(56, 189, 248, 0.2);
+  }
+
+  .realisations-more-wrap {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .btn-toggle-projects,
+  .btn-github-archive {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   .img-container {
@@ -2926,6 +2970,10 @@ footer,
 
 /* Très petit écran */
 @media (max-width: 360px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   .logo {
     font-size: 0.95rem;
   }
@@ -2937,5 +2985,15 @@ footer,
 
   .accueil {
     padding-top: 100px;
+  }
+
+  .accueil-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-social-links a {
+    font-size: 1.1rem;
+    width: 28px;
+    height: 28px;
   }
 }
