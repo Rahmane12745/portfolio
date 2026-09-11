@@ -484,7 +484,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'votenow': {
             category: '<i class="fas fa-vote-yea"></i> Web & Sécurité',
             title: 'VoteNow — Solution de Vote Électronique Flexible & Sécurisée',
-            subtitle: 'Plateforme web moderne de vote électronique développée avec HTML5, CSS3, JavaScript et Bootstrap. Elle garantit sécurité, anonymat, chiffrement cryptographique et traçabilité en temps réel pour tous types de scrutins (délégués, comités, élections associatives et universitaires).',
+            subtitle: 'Plateforme web moderne de vote électronique développée avec HTML5, CSS3, JavaScript et Bootstrap. Elle garantit sécurité (protection contre les failles XSS et CSRF), anonymat, chiffrement cryptographique et traçabilité en temps réel pour tous types de scrutins.',
             gallery: [
                 { src: 'votenow-cover.png', caption: 'Portail VoteNow — Accueil & Espace de vote sécurisé', large: true },
                 { src: 'votenow-features.png', caption: 'Avantages Clés — Sécurité, Accessibilité & Traçabilité' },

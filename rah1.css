@@ -483,19 +483,22 @@ body {
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 3px;
+  gap: 5px;
+  margin-top: 3px;
 }
 
 .tech-tag {
   background: #e0f2fe;
-  color: #0369a1;
+  color: #0284c7;
   border: 1px solid #bae6fd;
-  font-size: 0.55rem;
+  font-size: 0.54rem;
   font-weight: 700;
   font-family: 'JetBrains Mono', monospace;
-  padding: 0.5px 4px;
-  border-radius: 2px;
-  letter-spacing: 0.2px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* ==========================================================
