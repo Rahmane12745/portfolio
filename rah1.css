@@ -548,3 +548,25 @@ body {
     print-color-adjust: exact !important;
   }
 }
+
+/* ==========================================================
+   RESPONSIVE SMARTPHONE & TABLETTE (@media screen)
+   ========================================================== */
+@media screen and (max-width: 800px) {
+  body {
+    padding: 10px;
+    height: auto;
+  }
+  .cv-page {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    flex-direction: column;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  .cv-sidebar, .cv-main {
+    width: 100%;
+    height: auto;
+  }
+}
+
