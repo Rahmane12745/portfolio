@@ -1,0 +1,550 @@
+/* ==========================================================
+   CV PROFESSIONNEL A4 EXACT (1 PAGE) — ABDOURAHMANE BA
+   Design 100% calqué sur le template de référence (Amacodou)
+   Palette : Bleu & Blanc (#0f172a, #0284c7, #38bdf8, #ffffff)
+   ========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #cbd5e1;
+  color: #1e293b;
+  line-height: 1.35;
+  padding: 20px 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== BARRE D'ACTIONS RAPIDES (Non imprimable) ===== */
+.action-bar {
+  width: 210mm;
+  max-width: 100%;
+  margin: 0 auto 12px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.back-btn {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #94a3b8;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.back-btn:hover {
+  background: #f8fafc;
+  color: #0284c7;
+  border-color: #0284c7;
+}
+
+.print-btn {
+  background: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.35);
+}
+
+.print-btn:hover {
+  background: #0369a1;
+}
+
+/* ===== CONTENEUR PRINCIPAL DU CV (STRICT FORMAT A4) ===== */
+.cv-page {
+  width: 210mm;
+  height: 297mm;
+  min-height: 297mm;
+  max-height: 297mm;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.2);
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* ==========================================================
+   COLONNE GAUCHE : SIDEBAR SOMBRE (72mm)
+   ========================================================== */
+.cv-sidebar {
+  width: 72mm;
+  height: 297mm;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 10mm 5mm 10mm 5mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* Photo de profil */
+.sidebar-photo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.sidebar-photo {
+  width: 118px;
+  height: 118px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3.5px solid #ffffff;
+  outline: 2.5px solid #0284c7;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* Titres de sections Sidebar */
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-title {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #38bdf8;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+  padding-bottom: 2px;
+  margin-bottom: 1px;
+}
+
+/* Sous-catégories de compétences */
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 2px;
+}
+
+.category-title {
+  font-size: 0.61rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 1px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #f1f5f9;
+}
+
+.skill-dots {
+  display: flex;
+  gap: 2.5px;
+  align-items: center;
+}
+
+.dot {
+  width: 5.5px;
+  height: 5.5px;
+  border-radius: 50%;
+  background: #334155;
+}
+
+.dot.filled {
+  background: #38bdf8;
+  box-shadow: 0 0 3px rgba(56, 189, 248, 0.6);
+}
+
+/* Outils & Soft Skills tags */
+.tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5px;
+}
+
+.tag-pill {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  font-size: 0.61rem;
+  font-weight: 500;
+  padding: 2px 5.5px;
+  border-radius: 3px;
+  letter-spacing: 0.1px;
+}
+
+/* Langues avec jauges */
+.lang-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  margin-bottom: 4px;
+}
+
+.lang-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang-name {
+  font-size: 0.70rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.lang-badge {
+  background: #0284c7;
+  color: #ffffff;
+  font-size: 0.60rem;
+  font-weight: 700;
+  padding: 0.5px 4.5px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.lang-sub {
+  font-size: 0.56rem;
+  color: #94a3b8;
+}
+
+.lang-bar {
+  width: 100%;
+  height: 3.5px;
+  background: #334155;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 1px;
+}
+
+.lang-fill {
+  height: 100%;
+  background: #38bdf8;
+  border-radius: 2px;
+}
+
+/* Intérêts ovales */
+.tags-cloud-oval {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag-oval {
+  background: rgba(30, 41, 59, 0.65);
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  font-size: 0.61rem;
+  font-weight: 500;
+  padding: 2.5px 8px;
+  border-radius: 20px;
+}
+
+/* ==========================================================
+   COLONNE DROITE : CONTENU BLANC (138mm)
+   ========================================================== */
+.cv-main {
+  width: 138mm;
+  height: 297mm;
+  background: #ffffff;
+  padding: 14mm 8mm 12mm 8mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Header Profil */
+.cv-header {
+  border-bottom: 2px solid #0284c7;
+  padding-bottom: 7px;
+}
+
+.header-name {
+  font-size: 1.62rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5px;
+}
+
+.header-title {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #0284c7;
+  margin-bottom: 7px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+}
+
+.contact-entry {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.67rem;
+  color: #334155;
+  white-space: nowrap;
+}
+
+.contact-entry i {
+  color: #0284c7;
+  font-size: 0.72rem;
+  width: 14px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.contact-entry a {
+  color: #334155;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-entry a:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+/* Titres de sections Principales */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5px;
+}
+
+.main-section-title {
+  font-size: 0.77rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 2px;
+  margin-bottom: 1px;
+}
+
+.profil-text {
+  font-size: 0.68rem;
+  line-height: 1.36;
+  color: #334155;
+  text-align: justify;
+}
+
+.profil-text strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Arbre de Formation (Timeline) */
+.timeline-tree {
+  border-left: 2px solid #0284c7;
+  margin-left: 5px;
+  padding-left: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 6.5px;
+}
+
+.tree-item {
+  position: relative;
+}
+
+.tree-bullet {
+  position: absolute;
+  left: -18px;
+  top: 3px;
+  width: 8.5px;
+  height: 8.5px;
+  border-radius: 50%;
+  background: #0284c7;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 0 0 1px #0284c7;
+}
+
+.tree-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.tree-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tree-right-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tree-date {
+  font-size: 0.61rem;
+  font-weight: 700;
+  color: #0284c7;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+}
+
+.badge-mention {
+  background: #0284c7;
+  color: #ffffff;
+  font-size: 0.58rem;
+  font-weight: 600;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.badge-mention.badge-passable {
+  background: #64748b;
+}
+
+.tree-school {
+  font-size: 0.64rem;
+  color: #64748b;
+  font-weight: 500;
+  display: block;
+  margin: 0.5px 0 1.5px 0;
+}
+
+.tree-list {
+  margin: 0;
+  padding-left: 12px;
+  font-size: 0.65rem;
+  color: #334155;
+  line-height: 1.3;
+}
+
+/* Liste des Projets & Réalisations */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 3px solid #0284c7;
+  border-radius: 4px;
+  padding: 5px 9px;
+}
+
+.project-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.5px;
+}
+
+.project-desc {
+  font-size: 0.64rem;
+  color: #475569;
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.tech-tag {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  font-size: 0.55rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 0.5px 4px;
+  border-radius: 2px;
+  letter-spacing: 0.2px;
+}
+
+/* ==========================================================
+   STYLES D'IMPRESSION & EXPORT PDF (@media print)
+   Garantit 1 PAGE EXACTE SANS AUCUN DÉPHASAGE
+   ========================================================== */
+@media print {
+  html, body {
+    width: 210mm !important;
+    height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .cv-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    overflow: hidden !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  .cv-sidebar {
+    width: 72mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    box-sizing: border-box !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .cv-main {
+    width: 138mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    box-sizing: border-box !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .project-box, .tech-tag, .tag-pill, .tag-oval, .badge-mention, .lang-badge, .lang-fill, .dot.filled {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
