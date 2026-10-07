@@ -138,51 +138,29 @@ body {
   margin-bottom: 1px;
 }
 
-/* Sous-catégories de compétences */
-.skill-category {
+/* Groupes de compétences textuelles (Sans jauges / points - Format académique Master) */
+.skill-group {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-bottom: 2px;
+  gap: 1.5px;
+  margin-bottom: 5px;
 }
 
-.category-title {
-  font-size: 0.61rem;
+.skill-group-title {
+  font-size: 0.62rem;
   font-weight: 700;
-  color: #94a3b8;
-  letter-spacing: 0.8px;
+  color: #38bdf8;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
   margin-bottom: 1px;
 }
 
-.skill-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.skill-name {
-  font-size: 0.68rem;
-  font-weight: 500;
+.skill-group-text {
+  font-size: 0.65rem;
   color: #f1f5f9;
-}
-
-.skill-dots {
-  display: flex;
-  gap: 2.5px;
-  align-items: center;
-}
-
-.dot {
-  width: 5.5px;
-  height: 5.5px;
-  border-radius: 50%;
-  background: #334155;
-}
-
-.dot.filled {
-  background: #38bdf8;
-  box-shadow: 0 0 3px rgba(56, 189, 248, 0.6);
+  line-height: 1.35;
+  font-weight: 400;
+  letter-spacing: 0.1px;
 }
 
 /* Outils & Soft Skills tags */
